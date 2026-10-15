@@ -1,2 +1,4 @@
-# theflamecodex
-The Flame Codex — official bilingual website (English / Español) of Dr. Zuluan Orion: the nondual ground, the descent, the Light Codes of the Flame Codex, and the books.
+# theflamecodex.com
+
+Bilingual site of Dr. Zuluan Orion — The Flame Codex / El Códice de la Llama.
+English at /, Spanish at /es/. Static files in public/, served by Cloudflare Workers (wrangler.jsonc).
