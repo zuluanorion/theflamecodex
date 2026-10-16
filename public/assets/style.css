@@ -113,3 +113,9 @@ footer.site{background:var(--night);color:#BDB3D0;padding:44px 0;font-size:16px;
 footer.site .brand{display:inline-block;margin-bottom:10px}
 footer.site a{color:#D9CDEA}
 section.dark .arc{color:#D9CDEA}
+nav.main a.sb{color:#E9D5A6;border-bottom:1px solid rgba(200,164,92,.6)}
+.books.shelf{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+.books.shelf .book{background:transparent;border:0}
+.books.shelf .book img{border:0;filter:drop-shadow(0 16px 22px rgba(30,26,22,.28));max-height:340px;width:auto;margin:0 auto}
+.books.shelf .book .t{text-align:center}
+.hero .sig.glow{width:min(400px,78vw);margin:-30px auto 6px;filter:none;opacity:1}
