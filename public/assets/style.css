@@ -234,3 +234,11 @@ table.log td:last-child{border-bottom:1px dashed var(--line);width:55%}
 .btn.gold:hover{color:#17132A;background:linear-gradient(135deg,#FFF0C4 0%,#E6C877 45%,#B88F45 100%);transform:translateY(-1px);box-shadow:0 0 0 1px rgba(255,240,196,.7),0 0 44px rgba(230,200,119,.6),0 12px 28px rgba(0,0,0,.4)}
 .sbcta .a{font-size:17px;font-style:italic;color:#CFC6E2;margin:14px 0 0}
 @media(max-width:600px){.btn.gold{font-size:13px;padding:16px 18px;letter-spacing:.08em;line-height:1.5}}
+
+/* ---- Codex only (Oct 2026): family band */
+a.card.fam{display:block;text-decoration:none;color:var(--ink);transition:transform .25s,box-shadow .25s}
+a.card.fam:hover{transform:translateY(-3px);box-shadow:0 22px 40px -26px rgba(30,26,22,.5);color:var(--ink)}
+a.card.fam p{color:var(--muted);font-size:18px;margin:0}
+a.card.fam p.eyebrow{color:var(--gold);font-size:13px;margin:0 0 6px}
+a.card.fam h3{margin:2px 0 10px}
+@media(max-width:600px){.books.shelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px}.books.shelf .book img{max-height:240px}.books.shelf .book .t{padding:12px 4px 6px}.books.shelf .book h4{font-size:15px}}
