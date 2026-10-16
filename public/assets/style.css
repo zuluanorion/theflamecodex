@@ -226,3 +226,11 @@ p.examples{font-style:italic;color:var(--violet)}
 table.log td:last-child{border-bottom:1px dashed var(--line);width:55%}
 .grid2.cards4{align-items:stretch}
 .grid2.cards4 .card{height:100%}
+
+/* ---- Prominent golden call to Spiritual Balance on the home hero */
+.sbcta{margin:30px auto 0;max-width:640px;text-align:center}
+.sbcta .q{font-family:var(--caps);letter-spacing:.14em;font-size:14px;color:#E9D5A6;margin:0 0 12px}
+.btn.gold{background:linear-gradient(135deg,#F3E2B3 0%,#D9B866 45%,#A8813C 100%);color:#17132A;border:0;font-size:15px;font-weight:600;letter-spacing:.12em;padding:18px 34px;border-radius:3px;box-shadow:0 0 0 1px rgba(243,226,179,.5),0 0 34px rgba(217,184,102,.45),0 10px 24px rgba(0,0,0,.35);transition:transform .2s,box-shadow .2s}
+.btn.gold:hover{color:#17132A;background:linear-gradient(135deg,#FFF0C4 0%,#E6C877 45%,#B88F45 100%);transform:translateY(-1px);box-shadow:0 0 0 1px rgba(255,240,196,.7),0 0 44px rgba(230,200,119,.6),0 12px 28px rgba(0,0,0,.4)}
+.sbcta .a{font-size:17px;font-style:italic;color:#CFC6E2;margin:14px 0 0}
+@media(max-width:600px){.btn.gold{font-size:13px;padding:16px 18px;letter-spacing:.08em;line-height:1.5}}
