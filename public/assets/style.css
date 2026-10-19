@@ -587,6 +587,14 @@ section.alt .illink{background:#FFFDF8}
 .ilsrc .books{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
 .ilsrc .book{flex:0 1 210px}
 .ilsrc .note{margin-top:18px}
+@media(max-width:600px){.ilsrc .books{gap:26px 16px}.ilsrc .book{flex:0 1 calc(50% - 8px)}}
+/* the Divine Presence: his painting as a wide banner, his words beneath it */
+#presencia{scroll-margin-top:64px}
+section.ilpresence{padding-top:30px}
+.ilpresence blockquote{border:0;padding:0;margin:18px auto 0;max-width:680px;font-size:clamp(23px,2.6vw,28px);line-height:1.45;color:var(--violet)}
+.ilpresence blockquote.q2{margin-top:34px;max-width:620px;font-size:21px;line-height:1.6;color:var(--ink)}
+.ilpresence cite{display:block;font-style:normal;font-family:var(--caps);font-size:12px;letter-spacing:.18em;color:var(--muted);margin-top:12px}
+.ilpresence cite em{font-family:var(--serif);font-style:italic;letter-spacing:.02em;font-size:17px}
 .ilhero .kplate-hero{width:min(210px,50vw)}
 .ilhero h1{font-size:clamp(27px,4.3vw,44px);letter-spacing:.1em;max-width:920px;margin:0 auto}
 .ilhero .sub{font-size:clamp(18px,2.2vw,22px)}
@@ -644,3 +652,31 @@ a.enc:hover img{transform:scale(1.03)}
  .encrow:last-child a.enc{grid-column:1/-1}.encrow:last-child a.enc img{aspect-ratio:auto}}
 nav.ilcrumb .ilcount{white-space:nowrap}
 @media(max-width:600px){nav.ilcrumb .ilcount{padding:0 10px}}
+/* a key's syllable in his own voice (the button appears once the recording exists) */
+.kplay{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;margin-left:14px;vertical-align:middle;border-radius:50%;border:1px solid var(--gold2);background:transparent;color:var(--gold2);font-size:13px;line-height:1;padding:0 0 0 3px;cursor:pointer;transition:background .2s,color .2s}
+.kplay:hover,.kplay.on{background:var(--gold2);color:var(--night)}
+.kaux .kplay{width:28px;height:28px;font-size:11px;margin-left:8px}
+@media(max-width:760px){.ke .kd h3 .kplay{display:flex;margin:10px auto 0}}
+/* home: his photo beside "the question" */
+.question{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:56px;align-items:center;max-width:980px}
+.question figure{margin:0}
+.question img{width:100%;height:auto;border-radius:3px;box-shadow:0 24px 48px -24px rgba(23,19,42,.5)}
+.question figcaption{font-family:var(--caps);font-size:12px;letter-spacing:.18em;color:var(--muted);text-align:center;margin-top:14px}
+.qbtns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+@media(max-width:760px){.question{grid-template-columns:1fr;gap:28px;text-align:center}.question figure{max-width:240px;margin:0 auto}.qbtns{justify-content:center}}
+/* retreats: the June 2027 journey, over a photo from Chiang Mai */
+section.trip27{position:relative;overflow:hidden;background:var(--night);color:#EDE6F6;padding:110px 0}
+.trip27 .tripbg{position:absolute;inset:0}
+.trip27 .tripbg img{width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.36}
+.trip27 .wrap{position:relative}
+.trip27t{max-width:660px}
+.trip27 .eyebrow{color:var(--gold2)}
+.trip27 h2{color:#F7EFD9}
+.trip27 .btns{justify-content:flex-start}
+@media(max-width:760px){section.trip27{padding:80px 0}.trip27t{text-align:center}.trip27 .btns{justify-content:center}}
+/* the Amazon link under a book */
+.book .buy{display:inline-block;margin-top:8px;font-family:var(--caps);font-size:12px;letter-spacing:.14em;color:var(--violet);text-decoration:none;border-bottom:1px solid rgba(74,59,120,.35);padding-bottom:1px}
+.book .buy:hover{color:var(--gold);border-color:var(--gold)}
+/* Yoga of the Descent: tiles fill the row whatever their number (3 to 6) */
+nav.dsub ~ section .tiles{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+nav.dsub ~ section .wrap > .tiles,nav.dsub ~ section .wrap > p{max-width:980px;margin-left:auto;margin-right:auto}
