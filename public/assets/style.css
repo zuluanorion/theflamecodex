@@ -680,3 +680,18 @@ section.trip27{position:relative;overflow:hidden;background:var(--night);color:#
 /* Yoga of the Descent: tiles fill the row whatever their number (3 to 6) */
 nav.dsub ~ section .tiles{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 nav.dsub ~ section .wrap > .tiles,nav.dsub ~ section .wrap > p{max-width:980px;margin-left:auto;margin-right:auto}
+
+/* home · "Descubre los Códigos de Luz" — the door to the /codigos/ library */
+.discover{display:block;max-width:620px;margin:22px auto 4px;padding:20px 28px 18px;text-decoration:none;text-align:center;position:relative;
+  background:linear-gradient(135deg,#C8A45C 0%,#E6CC8A 48%,#B8924A 100%);color:#17132A;border-radius:3px;
+  box-shadow:0 0 0 1px rgba(241,227,190,.6),0 0 34px rgba(200,164,92,.45),0 14px 40px rgba(0,0,0,.35);animation:dglow 3.2s ease-in-out infinite}
+.discover:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(241,227,190,.8),0 0 50px rgba(220,190,120,.65),0 18px 46px rgba(0,0,0,.4);color:#17132A}
+.discover .d-star{display:block;font-size:20px;line-height:1;margin-bottom:6px;color:#4A3B78}
+.discover .d-main{display:block;font-family:var(--caps);font-size:clamp(19px,2.6vw,25px);letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.discover .d-sub{display:block;font-family:var(--serif);font-style:italic;font-size:17px;margin-top:6px;color:#2A2140}
+@keyframes dglow{0%,100%{box-shadow:0 0 0 1px rgba(241,227,190,.6),0 0 26px rgba(200,164,92,.35),0 14px 40px rgba(0,0,0,.35)}50%{box-shadow:0 0 0 1px rgba(241,227,190,.85),0 0 48px rgba(220,190,120,.6),0 14px 40px rgba(0,0,0,.35)}}
+@media (prefers-reduced-motion:reduce){.discover{animation:none}}
+@media (max-width:600px){.discover{margin:24px 4px 0;padding:16px 16px 14px}.discover .d-sub{font-size:15.5px}}
+
+/* home hero: a smaller sigil so the Light Codes door is on the first screen */
+.hero:not(.page) .sig.glow{width:min(200px,46vw);margin-bottom:22px}
