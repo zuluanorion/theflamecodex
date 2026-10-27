@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Busca sueños, emociones y situaciones en los libros de Códigos de Luz. Explora prácticas y tríadas documentadas con sus láminas y sigilos 2D.">
+  <meta name="theme-color" content="#17132A">
+  <title>Códigos de Luz · Biblioteca unificada</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="health-data.js"></script>
+  <script defer src="health.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Códigos de Luz, inicio"><span class="brand-star" aria-hidden="true">✦</span><span>Códigos de Luz<small>BIBLIOTECA VIVA · ZULUAN ORION</small></span></a>
+    <nav aria-label="Principal"><a href="#explorar">Buscar en los libros</a><a href="#guia">Guía personal</a><a href="#salud">Salud</a><a href="#como">Cómo funciona</a><a class="fc-back" href="/es/">El Códice de la Llama ↗</a></nav>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading">Abriendo el catálogo de luz…</div></main>
+  <noscript>Activa JavaScript para explorar las tríadas. Esta aplicación procesa las respuestas en tu navegador.</noscript>
+  <footer class="site-footer"><span>Códigos de Luz <b>✦</b> Zuluan Orion</span><p>Un espacio de exploración espiritual para escuchar tu experiencia, elegir una intención y llevar la Llama a tu vida cotidiana.</p><a href="#fuentes">Fuentes y alcance</a><a href="#privacidad">Privacidad</a></footer>
+  <dialog id="image-dialog" aria-labelledby="image-title"><div class="dialog-head"><h2 id="image-title"></h2><button type="button" data-action="close-image" aria-label="Cerrar imagen">Cerrar ×</button></div><img id="large-image" alt=""><p id="image-credit"></p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
